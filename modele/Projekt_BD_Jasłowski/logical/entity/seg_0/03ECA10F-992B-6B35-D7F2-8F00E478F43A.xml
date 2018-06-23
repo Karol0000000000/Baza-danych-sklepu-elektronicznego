@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="03ECA10F-992B-6B35-D7F2-8F00E478F43A" name="Grupy_Wiekowe">
+<createdBy>Karol &amp; Monia</createdBy>
+<createdTime>2018-01-02 16:47:15 UTC</createdTime>
+<ownerDesignName>Projekt_BD_Jasłowski</ownerDesignName>
+<engineerTo>
+<item key="C8B595FF-81BA-AECE-192A-BD97C3E5A43B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id_Grupy_Wiekowej" id="070F232C-309F-D4FF-BC26-3F12BD124642">
+<createdBy>Karol &amp; Monia</createdBy>
+<createdTime>2018-01-02 16:47:26 UTC</createdTime>
+<ownerDesignName>Projekt_BD_Jasłowski</ownerDesignName>
+<engineerTo>
+<item key="C8B595FF-81BA-AECE-192A-BD97C3E5A43B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nazwa_Grupy_Wiekowej" id="6A4E04FD-E000-B714-795D-857B93A9FE6A">
+<createdBy>Karol &amp; Monia</createdBy>
+<createdTime>2018-01-02 16:47:53 UTC</createdTime>
+<ownerDesignName>Projekt_BD_Jasłowski</ownerDesignName>
+<engineerTo>
+<item key="C8B595FF-81BA-AECE-192A-BD97C3E5A43B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="967C6514-56E9-FF94-392E-BAA015DA503B" name="Grupy_Wiekowe PK">
+<createdBy>Karol &amp; Monia</createdBy>
+<createdTime>2018-01-02 16:47:47 UTC</createdTime>
+<ownerDesignName>Projekt_BD_Jasłowski</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="C8B595FF-81BA-AECE-192A-BD97C3E5A43B" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>070F232C-309F-D4FF-BC26-3F12BD124642</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

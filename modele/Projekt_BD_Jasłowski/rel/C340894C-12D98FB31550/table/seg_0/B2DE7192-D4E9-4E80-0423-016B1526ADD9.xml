@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B2DE7192-D4E9-4E80-0423-016B1526ADD9" name="Faktury">
+<createdBy>Karol &amp; Monia</createdBy>
+<createdTime>2018-01-10 13:31:00 UTC</createdTime>
+<generatorID>DC8C29A6-FBD7-C886-26E1-57F967DFA405</generatorID>
+<ownerDesignName>Projekt_BD_Jasłowski</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_Faktury" id="F393F86B-BFD2-D0B2-7526-E6F0DFD9D209">
+<createdBy>Karol &amp; Monia</createdBy>
+<createdTime>2018-01-10 13:31:00 UTC</createdTime>
+<generatorID>0ED706B2-A91E-FADB-DB38-24E33C2E111B</generatorID>
+<ownerDesignName>Projekt_BD_Jasłowski</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Data_Faktury" id="D0931414-FF1F-B9A4-5B5C-26F266B0289C">
+<createdBy>Karol &amp; Monia</createdBy>
+<createdTime>2018-01-10 13:31:00 UTC</createdTime>
+<generatorID>3CE84D90-28E9-80D0-ED62-A694692158AB</generatorID>
+<ownerDesignName>Projekt_BD_Jasłowski</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Wartosc_Faktury" id="8A6683AE-DE9B-50E7-2AB7-0C6CEE39B040">
+<createdBy>Karol &amp; Monia</createdBy>
+<createdTime>2018-01-10 13:31:00 UTC</createdTime>
+<generatorID>0FF2DF77-578E-C6F9-DC2D-FB8390495ABA</generatorID>
+<ownerDesignName>Projekt_BD_Jasłowski</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,6,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Termin_Platnosci" id="19A6EF51-7737-6B70-CAE8-A735BCC6D0F9">
+<createdBy>Karol &amp; Monia</createdBy>
+<createdTime>2018-01-10 13:31:00 UTC</createdTime>
+<generatorID>DE41E778-D9D9-F5BC-78C2-9E6B475912B5</generatorID>
+<ownerDesignName>Projekt_BD_Jasłowski</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Id_Klienta" id="3DA9F7F2-BFBE-04AD-FB8C-21247E87E23E">
+<createdBy>Karol &amp; Monia</createdBy>
+<createdTime>2018-01-10 13:31:00 UTC</createdTime>
+<generatorID>2F3E822F-F7A8-6D1B-D275-A7ADEE42B2D6</generatorID>
+<ownerDesignName>Projekt_BD_Jasłowski</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A0225AC7-0645-D4F4-D31D-29719BF18F37" referredColumn="59D96641-3AD8-C203-7B85-CA0387072050"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A511FC38-5F53-D05D-0786-6D3952FB8F3F" name="Faktury_PK">
+<createdBy>Karol &amp; Monia</createdBy>
+<createdTime>2018-01-10 13:31:00 UTC</createdTime>
+<generatorID>0FDCFDA6-7D65-BDA7-54BB-3E5654021C26</generatorID>
+<ownerDesignName>Projekt_BD_Jasłowski</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F393F86B-BFD2-D0B2-7526-E6F0DFD9D209"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="585F08A7-6077-E0C4-5432-7701A40495EF" name="Klienci_Faktury_FK">
+<createdBy>Karol &amp; Monia</createdBy>
+<createdTime>2018-01-10 13:31:00 UTC</createdTime>
+<generatorID>27B92635-1511-C6A0-35DB-3D12F8D64005</generatorID>
+<ownerDesignName>Projekt_BD_Jasłowski</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3DA9F7F2-BFBE-04AD-FB8C-21247E87E23E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

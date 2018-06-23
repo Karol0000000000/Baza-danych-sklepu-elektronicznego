@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="773B29A2-230C-9AEE-9FB3-55D25B88BB51" containerWithKeyObject="803ECD2F-D22F-D636-C601-F047C95C5389" localFKIndex="B7D5D594-E6C6-2881-D15A-1861C8D56812" name="Grupy_Wiekowe_Klienci_FK">
+<createdBy>Karol &amp; Monia</createdBy>
+<createdTime>2018-01-10 13:31:00 UTC</createdTime>
+<generatorID>598D00F4-EABA-027E-F845-735DFD03EDF2</generatorID>
+<ownerDesignName>Projekt_BD_Jasłowski</ownerDesignName>
+<referredTableLongName>Grupy_Wiekowe</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>1F7D9E0B-EDA5-C590-A1E0-D7ECF4793EFD</referredTableID>
+<keyObject>BA096B44-1927-1703-8273-BC81218CF6F2</keyObject>
+<referredKeyID>BA096B44-1927-1703-8273-BC81218CF6F2</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Id_Grupy_Wiekowej</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

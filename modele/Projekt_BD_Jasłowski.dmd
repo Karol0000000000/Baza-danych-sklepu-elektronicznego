@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Projekt_BD_Jasłowski" id="C62D819E-2E14-677D-63DD-5925E2E8B55A" version="3.5">
+<createdBy>Karol &amp; Monia</createdBy>
+<createdTime>2018-01-02 13:50:23 UTC</createdTime>
+<ownerDesignName>Projekt_bazy_danych</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>C62D819E-2E14-677D-63DD-5925E2E8B55A</designId>
+</OSDM_Design>

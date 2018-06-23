@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Produkty_Faktura_Pozycje_FK" directorySegmentName="seg_0" id="64A22FB8-1606-E537-8A89-5621CFF4A4C6">
+<createdBy>Karol &amp; Monia</createdBy>
+<createdTime>2018-01-02 16:39:10 UTC</createdTime>
+<ownerDesignName>Projekt_BD_Jasłowski</ownerDesignName>
+<engineerTo>
+<item key="C8B595FF-81BA-AECE-192A-BD97C3E5A43B" value="true"/>
+</engineerTo>
+<sourcePk>40886ECB-23F4-9A66-D55A-FEF92E8A99FB</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>341D3731-3909-0DB1-B0E1-605A0BED9E00</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>C01192A2-A6BA-790A-7267-9045B1BD3BF2</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

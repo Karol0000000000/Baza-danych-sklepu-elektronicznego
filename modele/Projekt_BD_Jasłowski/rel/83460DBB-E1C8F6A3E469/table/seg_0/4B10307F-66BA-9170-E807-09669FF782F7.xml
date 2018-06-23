@@ -1,0 +1,129 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4B10307F-66BA-9170-E807-09669FF782F7" name="Produkty">
+<createdBy>Karol &amp; Monia</createdBy>
+<createdTime>2018-01-06 23:29:01 UTC</createdTime>
+<generatorID>341D3731-3909-0DB1-B0E1-605A0BED9E00</generatorID>
+<ownerDesignName>Projekt_BD_Jasłowski</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_Produktu" id="DC820056-8957-E387-E44B-FCCE7BC38C00">
+<createdBy>Karol &amp; Monia</createdBy>
+<createdTime>2018-01-06 23:29:01 UTC</createdTime>
+<generatorID>E3157CA7-5366-1615-7CAB-511A45E0BD48</generatorID>
+<ownerDesignName>Projekt_BD_Jasłowski</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nazwa_Produktu" id="58F11AA3-DB0B-F685-73CF-244B67BFB24D">
+<createdBy>Karol &amp; Monia</createdBy>
+<createdTime>2018-01-06 23:29:01 UTC</createdTime>
+<generatorID>FE01C174-1BC9-1B68-7193-E7E15E574F66</generatorID>
+<ownerDesignName>Projekt_BD_Jasłowski</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cena_Produktu" id="4FA71560-D833-5CE5-FF67-CEF2D5E1E482">
+<createdBy>Karol &amp; Monia</createdBy>
+<createdTime>2018-01-06 23:29:01 UTC</createdTime>
+<generatorID>CC8E90ED-D529-BDCF-7A20-20934BA9271D</generatorID>
+<ownerDesignName>Projekt_BD_Jasłowski</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,6,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Ilosc_Produktu" id="1E9263A1-42D9-AE40-5396-C305972D7FC6">
+<createdBy>Karol &amp; Monia</createdBy>
+<createdTime>2018-01-06 23:29:01 UTC</createdTime>
+<generatorID>0CF393F9-451F-627A-1E33-5242F4969326</generatorID>
+<ownerDesignName>Projekt_BD_Jasłowski</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Id_Producenta" id="1A092EAE-6E41-D8D8-8ADF-C251FDA773A1">
+<createdBy>Karol &amp; Monia</createdBy>
+<createdTime>2018-01-06 23:29:01 UTC</createdTime>
+<generatorID>97A9C9F8-33FA-F40D-E8B7-12AFE70C8E62</generatorID>
+<ownerDesignName>Projekt_BD_Jasłowski</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2E49F97F-4DBF-E1A9-548A-F3BC1C1AD3DA" referredColumn="1D20C754-54DD-D12A-FB4B-55A8E3B8A9CD"/>
+</associations>
+</Column>
+<Column name="Id_Grupy_Produktowej" id="09687EBB-5367-494D-63BE-0C89FB34FA9E">
+<createdBy>Karol &amp; Monia</createdBy>
+<createdTime>2018-01-06 23:29:01 UTC</createdTime>
+<generatorID>70C01277-BB19-B2B7-86E0-793205954E30</generatorID>
+<ownerDesignName>Projekt_BD_Jasłowski</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="631634E6-71A6-1303-9C28-417437A8E316" referredColumn="F5077AC5-5C1A-49C8-855E-4922A0AC9D22"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F114478B-DC49-4280-06BA-68C4DE648F3C" name="Produkty_PK">
+<createdBy>Karol &amp; Monia</createdBy>
+<createdTime>2018-01-06 23:29:01 UTC</createdTime>
+<generatorID>40886ECB-23F4-9A66-D55A-FEF92E8A99FB</generatorID>
+<ownerDesignName>Projekt_BD_Jasłowski</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DC820056-8957-E387-E44B-FCCE7BC38C00"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="72C7882E-F817-5637-19B2-EE5A560E7051" name="Grupy_Produktowe_Produkty_FK">
+<createdBy>Karol &amp; Monia</createdBy>
+<createdTime>2018-01-06 23:29:01 UTC</createdTime>
+<generatorID>39C329F8-E048-F345-1516-40E2A8840616</generatorID>
+<ownerDesignName>Projekt_BD_Jasłowski</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="09687EBB-5367-494D-63BE-0C89FB34FA9E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="02A64999-7E59-9818-D6BF-F3768DA2089B" name="Producent_Produkty_FK">
+<createdBy>Karol &amp; Monia</createdBy>
+<createdTime>2018-01-06 23:29:01 UTC</createdTime>
+<generatorID>A3F4FEA9-517D-0911-E0AA-31C1BA060970</generatorID>
+<ownerDesignName>Projekt_BD_Jasłowski</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1A092EAE-6E41-D8D8-8ADF-C251FDA773A1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

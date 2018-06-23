@@ -1,0 +1,199 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="803ECD2F-D22F-D636-C601-F047C95C5389" name="Klienci">
+<createdBy>Karol &amp; Monia</createdBy>
+<createdTime>2018-01-10 13:31:00 UTC</createdTime>
+<generatorID>528D9EF9-B042-DC54-3D64-2BC3FD5A891D</generatorID>
+<ownerDesignName>Projekt_BD_Jasłowski</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_Klienta" id="59D96641-3AD8-C203-7B85-CA0387072050">
+<createdBy>Karol &amp; Monia</createdBy>
+<createdTime>2018-01-10 13:31:00 UTC</createdTime>
+<generatorID>CF3F160C-376C-8324-C715-C0720C743147</generatorID>
+<ownerDesignName>Projekt_BD_Jasłowski</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Imie_Klienta" id="9A8C1946-1CE2-FAAB-D72D-6FD92BDB15D4">
+<createdBy>Karol &amp; Monia</createdBy>
+<createdTime>2018-01-10 13:31:00 UTC</createdTime>
+<generatorID>75919156-92D6-205A-3658-F10FE914C1CE</generatorID>
+<ownerDesignName>Projekt_BD_Jasłowski</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nazwisko_Klienta" id="CE7E809B-3787-1999-ACC6-27BD4BA4E09D">
+<createdBy>Karol &amp; Monia</createdBy>
+<createdTime>2018-01-10 13:31:00 UTC</createdTime>
+<generatorID>EBC6940D-E0EC-F282-7961-4CFA43A3FF4E</generatorID>
+<ownerDesignName>Projekt_BD_Jasłowski</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>35</dataTypeSize>
+<ownDataTypeParameters>35,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Plec_Klienta" id="F37F8FE8-06C7-1E15-D2A6-515CAC7ED9E5">
+<createdBy>Karol &amp; Monia</createdBy>
+<createdTime>2018-01-10 13:31:00 UTC</createdTime>
+<generatorID>856011E9-9CA0-74C7-7A14-B5F1BE7159CF</generatorID>
+<ownerDesignName>Projekt_BD_Jasłowski</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Rok_Urodzenia" id="8153036B-EAD7-23BB-1BDC-8D3A1004B374">
+<createdBy>Karol &amp; Monia</createdBy>
+<createdTime>2018-01-10 13:31:00 UTC</createdTime>
+<generatorID>574F9803-7B0F-FD1B-5A38-4913BF2E7F01</generatorID>
+<ownerDesignName>Projekt_BD_Jasłowski</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="E_mail_Klienta" id="83A932FF-4FB5-3392-6749-AACE58CB4EDC">
+<createdBy>Karol &amp; Monia</createdBy>
+<createdTime>2018-01-10 13:31:00 UTC</createdTime>
+<generatorID>ACFAF046-C096-F5C8-E88F-B0E64C8FA25B</generatorID>
+<ownerDesignName>Projekt_BD_Jasłowski</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Telefon_Klienta" id="1DA59B3F-3FFE-AA4A-1AC3-73CCDD9613B7">
+<createdBy>Karol &amp; Monia</createdBy>
+<createdTime>2018-01-10 13:31:00 UTC</createdTime>
+<generatorID>0F767F16-58DE-AA2A-1405-8D7A225ECB1B</generatorID>
+<ownerDesignName>Projekt_BD_Jasłowski</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Ulica_Klienta" id="77BFEB9C-F305-E2B2-C30D-51A2C516DDCB">
+<createdBy>Karol &amp; Monia</createdBy>
+<createdTime>2018-01-10 13:31:00 UTC</createdTime>
+<generatorID>D8E365EA-7E07-9453-9F55-7784F9113018</generatorID>
+<ownerDesignName>Projekt_BD_Jasłowski</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Numer_Domu_Klienta" id="72A886BB-0B69-9ACE-4ABF-B9B6950DFDAE">
+<createdBy>Karol &amp; Monia</createdBy>
+<createdTime>2018-01-10 13:31:00 UTC</createdTime>
+<generatorID>55DDC862-F1BA-2EF2-5812-A751AAE1E661</generatorID>
+<ownerDesignName>Projekt_BD_Jasłowski</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Numer_Lokalu_Klienta" id="3437A943-E251-6B77-AA4C-6E478BADBA26">
+<createdBy>Karol &amp; Monia</createdBy>
+<createdTime>2018-01-10 13:31:00 UTC</createdTime>
+<generatorID>F1511CBB-950B-98D0-375F-63B9B1E79BE5</generatorID>
+<ownerDesignName>Projekt_BD_Jasłowski</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Kod_Pocztowy_Klienta" id="4D0AAE8B-2CB0-F354-373D-F38B221E4B6D">
+<createdBy>Karol &amp; Monia</createdBy>
+<createdTime>2018-01-10 13:31:00 UTC</createdTime>
+<generatorID>E15E399C-3612-63E4-6F43-D41BDBE26E91</generatorID>
+<ownerDesignName>Projekt_BD_Jasłowski</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Miasto_Klienta" id="BC141C39-8F02-289A-5D69-52E13EC49D28">
+<createdBy>Karol &amp; Monia</createdBy>
+<createdTime>2018-01-10 13:31:00 UTC</createdTime>
+<generatorID>AA4FD057-4358-2609-1E34-350F4CFD6A69</generatorID>
+<ownerDesignName>Projekt_BD_Jasłowski</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Id_Grupy_Wiekowej" id="D5955D2D-6DCB-92A2-B3E5-B2AEC2830F50">
+<createdBy>Karol &amp; Monia</createdBy>
+<createdTime>2018-01-10 13:31:00 UTC</createdTime>
+<generatorID>D753D3E2-249B-1B6F-8C97-D06B5464F0C3</generatorID>
+<ownerDesignName>Projekt_BD_Jasłowski</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="773B29A2-230C-9AEE-9FB3-55D25B88BB51" referredColumn="6D676559-F34B-6CEF-B815-8C19F1D4A95C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3EC52AFC-88E0-E717-532A-92872E33CDD1" name="Klienci_PK">
+<createdBy>Karol &amp; Monia</createdBy>
+<createdTime>2018-01-10 13:31:00 UTC</createdTime>
+<generatorID>E409C959-A754-DAB4-1FA5-D57A939DE8BF</generatorID>
+<ownerDesignName>Projekt_BD_Jasłowski</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="59D96641-3AD8-C203-7B85-CA0387072050"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B7D5D594-E6C6-2881-D15A-1861C8D56812" name="Grupy_Wiekowe_Klienci_FK">
+<createdBy>Karol &amp; Monia</createdBy>
+<createdTime>2018-01-10 13:31:00 UTC</createdTime>
+<generatorID>598D00F4-EABA-027E-F845-735DFD03EDF2</generatorID>
+<ownerDesignName>Projekt_BD_Jasłowski</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D5955D2D-6DCB-92A2-B3E5-B2AEC2830F50"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

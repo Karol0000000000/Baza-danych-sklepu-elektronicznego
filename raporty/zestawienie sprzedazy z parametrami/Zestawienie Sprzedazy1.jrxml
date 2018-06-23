@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Zestawienie Sprzedazy" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="fcf8e205-2d97-4926-98af-f83602727ff0">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="id_produktu" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="rok" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[select nazwa_producenta "Producent",nazwa_produktu "Produkt",
+model_produktu "Model",p.id_produktu "Id produktu",
+sum(liczba) "Suma w danym roku", extract(year from data_faktury) "Rok"
+from producenci pp,faktury_pozycje f, faktury ff, produkty p
+where f.id_faktury=ff.id_faktury and f.id_produktu=p.id_produktu and
+pp.id_producenta=p.id_producenta and p.id_produktu = $P{id_produktu} and extract(year from data_faktury)= $P{rok} group by p.id_produktu,nazwa_produktu,
+model_produktu,nazwa_producenta,extract(year from data_faktury)
+order by "Rok" desc,"Suma w danym roku"desc,"Id produktu"]]>
+	</queryString>
+	<field name="Producent" class="java.lang.String"/>
+	<field name="Produkt" class="java.lang.String"/>
+	<field name="Model" class="java.lang.String"/>
+	<field name="Id produktu" class="java.math.BigDecimal"/>
+	<field name="Suma w danym roku" class="java.math.BigDecimal"/>
+	<field name="Rok" class="java.math.BigDecimal"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="93" splitType="Stretch">
+			<staticText>
+				<reportElement x="121" y="24" width="323" height="33" uuid="7f26ec44-a5b1-44ab-baa0-1fff1e4e80d9"/>
+				<textElement textAlignment="Center">
+					<font size="24"/>
+				</textElement>
+				<text><![CDATA[Zestawienie sprzedazy]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="455" y="4" width="100" height="20" uuid="b57512ad-3809-4622-bada-7f3ce4380cd6"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="3" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="28" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="20" uuid="f06ec169-f370-4116-b892-890788d49b0f"/>
+				<text><![CDATA[Producent]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="0" width="100" height="20" uuid="4d6ad1c2-37c7-4de0-8550-7aa0cd7b99ce"/>
+				<text><![CDATA[Produkt]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="200" y="0" width="100" height="20" uuid="95ce2515-1d3d-40e4-a502-a97f3d0c1739"/>
+				<text><![CDATA[Model]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="0" width="100" height="20" uuid="ad2b2dbb-23bf-4b81-8830-d39ecb4f7a36"/>
+				<text><![CDATA[Id produktu]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="400" y="0" width="100" height="20" uuid="f6903233-bc91-46d7-b29b-60043ae04dc2"/>
+				<text><![CDATA[Suma w danym roku]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="500" y="0" width="100" height="20" uuid="6cc8ef08-0b0e-4478-b9f0-cb09186d05de"/>
+				<text><![CDATA[Rok]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="19" width="555" height="1" uuid="1dc32dab-e5a0-4fcf-8c4b-717432a8e963"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="22" splitType="Stretch">
+			<textField>
+				<reportElement mode="Opaque" x="0" y="0" width="555" height="20" backcolor="#CCCCCC" uuid="f38c516c-4ea4-461e-bec5-b26715514b46">
+					<printWhenExpression><![CDATA[$V{REPORT_COUNT}%2==1]]></printWhenExpression>
+				</reportElement>
+				<textFieldExpression><![CDATA[""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="0" width="100" height="20" uuid="33fd747e-c7df-4dd4-bea6-fc0ab576d39f"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{Produkt}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="200" y="0" width="100" height="20" uuid="ef24e988-2fcc-409f-a8f2-927303e19f6e"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{Model}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="400" y="0" width="100" height="20" uuid="87f65936-5ff0-43ad-be8f-8d6ea02870c9"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{Suma w danym roku}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="500" y="0" width="55" height="20" uuid="7ef45991-5cbd-4039-b5ea-f690f1a658d9"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{Rok}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="0" width="100" height="20" uuid="9a324edf-a0d5-4b18-94c7-0a6b2a6103cd"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{Producent}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="0" width="100" height="20" uuid="2a211741-4a21-4621-8407-a2e4b66e4fe4"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{Id produktu}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="29" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="23" splitType="Stretch">
+			<textField>
+				<reportElement x="430" y="0" width="80" height="20" uuid="ca4c729e-cd81-477e-ac63-ce6d909e06a4"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="510" y="0" width="40" height="20" uuid="323ba733-bdea-46ea-a799-a63c9ec0bdf2"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="40" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="0" width="555" height="1" uuid="2dc66e93-67d5-487a-a69c-033cc435445a"/>
+			</line>
+			<textField>
+				<reportElement x="129" y="11" width="301" height="20" uuid="bc1297a6-1f38-4df2-af1f-aa231998d835"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA["Zestawienie zawiera "+$V{REPORT_COUNT}+" rezultatów"]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>

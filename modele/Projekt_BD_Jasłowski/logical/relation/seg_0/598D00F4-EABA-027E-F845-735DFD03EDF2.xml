@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Grupy_Wiekowe_Klienci_FK" directorySegmentName="seg_0" id="598D00F4-EABA-027E-F845-735DFD03EDF2">
+<createdBy>Karol &amp; Monia</createdBy>
+<createdTime>2018-01-02 16:49:32 UTC</createdTime>
+<ownerDesignName>Projekt_BD_Jasłowski</ownerDesignName>
+<engineerTo>
+<item key="C8B595FF-81BA-AECE-192A-BD97C3E5A43B" value="true"/>
+</engineerTo>
+<sourcePk>967C6514-56E9-FF94-392E-BAA015DA503B</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>03ECA10F-992B-6B35-D7F2-8F00E478F43A</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>528D9EF9-B042-DC54-3D64-2BC3FD5A891D</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

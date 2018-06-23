@@ -1,0 +1,50 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1F7D9E0B-EDA5-C590-A1E0-D7ECF4793EFD" name="Grupy_Wiekowe">
+<createdBy>Karol &amp; Monia</createdBy>
+<createdTime>2018-01-10 13:31:00 UTC</createdTime>
+<generatorID>03ECA10F-992B-6B35-D7F2-8F00E478F43A</generatorID>
+<ownerDesignName>Projekt_BD_Jasłowski</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_Grupy_Wiekowej" id="6D676559-F34B-6CEF-B815-8C19F1D4A95C">
+<createdBy>Karol &amp; Monia</createdBy>
+<createdTime>2018-01-10 13:31:00 UTC</createdTime>
+<generatorID>070F232C-309F-D4FF-BC26-3F12BD124642</generatorID>
+<ownerDesignName>Projekt_BD_Jasłowski</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nazwa_Grupy_Wiekowej" id="52160D4C-0AA0-3776-B195-3F46266570F5">
+<createdBy>Karol &amp; Monia</createdBy>
+<createdTime>2018-01-10 13:31:00 UTC</createdTime>
+<generatorID>6A4E04FD-E000-B714-795D-857B93A9FE6A</generatorID>
+<ownerDesignName>Projekt_BD_Jasłowski</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BA096B44-1927-1703-8273-BC81218CF6F2" name="Grupy_Wiekowe_PK">
+<createdBy>Karol &amp; Monia</createdBy>
+<createdTime>2018-01-10 13:31:00 UTC</createdTime>
+<generatorID>967C6514-56E9-FF94-392E-BAA015DA503B</generatorID>
+<ownerDesignName>Projekt_BD_Jasłowski</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6D676559-F34B-6CEF-B815-8C19F1D4A95C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

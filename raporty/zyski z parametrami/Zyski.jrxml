@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Zyski" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d8144af1-e636-425c-bef3-237264f53573">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="Numer Miesiaca" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="Rok" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[select extract(year from data_faktury) "Rok",extract(month from data_faktury) "Miesiac",
+sum((liczba * cena_zakupu) - (liczba* cena_produktu)) "Zysk"
+from faktury_pozycje f,produkty p,faktury ff where
+f.id_produktu=p.id_produktu and ff.id_faktury=f.id_faktury and extract(month from data_faktury) = $P{Numer Miesiaca} and extract(year from data_faktury)=$P{Rok}
+group by extract(year from data_faktury),extract(month from data_faktury)
+order by "Rok" desc,"Miesiac"]]>
+	</queryString>
+	<field name="Rok" class="java.math.BigDecimal"/>
+	<field name="Miesiac" class="java.math.BigDecimal"/>
+	<field name="Zysk" class="java.math.BigDecimal"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="96" splitType="Stretch">
+			<staticText>
+				<reportElement x="88" y="10" width="365" height="47" uuid="5f012582-e36e-4a78-b912-5b5190034d4b"/>
+				<textElement textAlignment="Center">
+					<font size="36"/>
+				</textElement>
+				<text><![CDATA[Zyski]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="455" y="0" width="100" height="20" uuid="630b971a-7381-4549-8e85-b95b1c953fe5"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="6" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="30" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="185" height="20" uuid="2ef49bc9-f38c-4a8b-8811-0388db85aea2"/>
+				<text><![CDATA[Rok]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="185" y="1" width="185" height="20" uuid="6c768d99-29a9-4c4e-832e-77bc11f88d20"/>
+				<text><![CDATA[Miesiac]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="370" y="0" width="185" height="20" uuid="bd305f47-14db-4f92-a600-9ca836d6c406"/>
+				<text><![CDATA[Zysk (zlotych)]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="20" width="555" height="1" uuid="a15f678b-d916-42e2-9051-8375d6e7c14e"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="25" splitType="Stretch">
+			<textField>
+				<reportElement mode="Opaque" x="0" y="0" width="555" height="20" backcolor="#CCFFCC" uuid="719f5eef-7dbe-4a56-a1c4-a1e7e7dfb403">
+					<printWhenExpression><![CDATA[$V{REPORT_COUNT}.intValue()%2==1]]></printWhenExpression>
+				</reportElement>
+				<textFieldExpression><![CDATA[""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="0" width="185" height="20" uuid="d7d7baeb-d65a-401c-97cb-16df8f701e92"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{Rok}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="185" y="0" width="185" height="20" uuid="2e2c61aa-1863-4b6e-86ff-167d1dd1178b"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{Miesiac}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="370" y="0" width="185" height="20" uuid="4691b87b-24e3-4394-92ff-1cc3934382c2"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{Zysk}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="25" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="22" splitType="Stretch">
+			<textField>
+				<reportElement x="435" y="0" width="80" height="20" uuid="4c3ee6df-e004-44e1-83eb-a712e00b969a"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="515" y="0" width="40" height="20" uuid="1532e0fc-420e-4b21-a906-939893b9a90a"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="0" width="555" height="1" uuid="b1ffcc13-8ad3-4800-ac28-e3f8a2bf3e23"/>
+			</line>
+			<textField>
+				<reportElement x="122" y="12" width="313" height="20" uuid="103b3353-6c8f-465e-a0a7-fa3826cd7099"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA["Raport liczy "+$V{REPORT_COUNT}+" rezultaty"]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>

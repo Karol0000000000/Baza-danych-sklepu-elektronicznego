@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DC8C29A6-FBD7-C886-26E1-57F967DFA405" name="Faktury">
+<createdBy>Karol &amp; Monia</createdBy>
+<createdTime>2018-01-02 16:26:26 UTC</createdTime>
+<ownerDesignName>Projekt_BD_Jasłowski</ownerDesignName>
+<engineerTo>
+<item key="C340894C-FF78-9B89-9DCE-12D98FB31550" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id_Faktury" id="0ED706B2-A91E-FADB-DB38-24E33C2E111B">
+<createdBy>Karol &amp; Monia</createdBy>
+<createdTime>2018-01-02 16:26:33 UTC</createdTime>
+<ownerDesignName>Projekt_BD_Jasłowski</ownerDesignName>
+<engineerTo>
+<item key="C340894C-FF78-9B89-9DCE-12D98FB31550" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Data_Faktury" id="3CE84D90-28E9-80D0-ED62-A694692158AB">
+<createdBy>Karol &amp; Monia</createdBy>
+<createdTime>2018-01-02 16:30:05 UTC</createdTime>
+<ownerDesignName>Projekt_BD_Jasłowski</ownerDesignName>
+<engineerTo>
+<item key="C340894C-FF78-9B89-9DCE-12D98FB31550" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Wartosc_Faktury" id="0FF2DF77-578E-C6F9-DC2D-FB8390495ABA">
+<createdBy>Karol &amp; Monia</createdBy>
+<createdTime>2018-01-02 16:30:24 UTC</createdTime>
+<ownerDesignName>Projekt_BD_Jasłowski</ownerDesignName>
+<engineerTo>
+<item key="C340894C-FF78-9B89-9DCE-12D98FB31550" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Termin_Platnosci" id="DE41E778-D9D9-F5BC-78C2-9E6B475912B5">
+<createdBy>Karol &amp; Monia</createdBy>
+<createdTime>2018-01-02 17:06:00 UTC</createdTime>
+<ownerDesignName>Projekt_BD_Jasłowski</ownerDesignName>
+<engineerTo>
+<item key="C340894C-FF78-9B89-9DCE-12D98FB31550" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Klienta" id="2F3E822F-F7A8-6D1B-D275-A7ADEE42B2D6">
+<createdBy>Karol &amp; Monia</createdBy>
+<createdTime>2018-01-02 16:31:36 UTC</createdTime>
+<generatorID>27B92635-1511-C6A0-35DB-3D12F8D64005</generatorID>
+<ownerDesignName>Projekt_BD_Jasłowski</ownerDesignName>
+<engineerTo>
+<item key="C340894C-FF78-9B89-9DCE-12D98FB31550" value="true"/>
+</engineerTo>
+<referedAttribute>CF3F160C-376C-8324-C715-C0720C743147</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0FDCFDA6-7D65-BDA7-54BB-3E5654021C26" name="Faktura PK">
+<createdBy>Karol &amp; Monia</createdBy>
+<createdTime>2018-01-02 16:26:48 UTC</createdTime>
+<ownerDesignName>Projekt_BD_Jasłowski</ownerDesignName>
+<engineerTo>
+<item key="C340894C-FF78-9B89-9DCE-12D98FB31550" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0ED706B2-A91E-FADB-DB38-24E33C2E111B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="4EA6F832-72BC-4329-AD05-88969E699D02" containerWithKeyObject="A36C35DC-0ABD-D9D2-41FE-74C010AA0DEE" localFKIndex="39474BB3-39B4-AC6B-D062-7A9621DCEB94" name="Grupy_Produktowe_Produkty_FK">
+<createdBy>Karol &amp; Monia</createdBy>
+<createdTime>2018-01-10 13:31:00 UTC</createdTime>
+<generatorID>39C329F8-E048-F345-1516-40E2A8840616</generatorID>
+<ownerDesignName>Projekt_BD_Jasłowski</ownerDesignName>
+<referredTableLongName>Grupy_Produktowe</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>2AA3B58F-CE71-BB22-5471-A15B805417B8</referredTableID>
+<keyObject>69BC1893-3BE8-8C2B-3EDC-80ED6D467F54</keyObject>
+<referredKeyID>69BC1893-3BE8-8C2B-3EDC-80ED6D467F54</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Id_Grupy_Produktowej</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
